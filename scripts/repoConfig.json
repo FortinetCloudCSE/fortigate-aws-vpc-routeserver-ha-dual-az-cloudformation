@@ -11,7 +11,7 @@
 	"shortcuts": [
 		{
 			"text": "Fortinet CSE Cloud Github Org",
-			"URL": "https://github.com/FortinetCloudCSE/UserRepo",
+			"URL": "https://github.com/FortinetCloudCSE",
 			"icon": "fa-tools",
 			"weight": 1
 		},

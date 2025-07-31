@@ -7,7 +7,7 @@ weight: 30
 
 Once the prerequisites have been satisfied proceed with the deployment steps below.
 
-1.  To download the templates, you can either clone the repo with the git command below, or download the repo as a ZIP archive.  The templates themselves are located in the **/cloudformation folder**
+1.  To download the templates, you can either clone the repo with the git command below, or [**download**](https://github.com/FortinetCloudCSE/fortigate-aws-vpc-routeserver-ha-dual-az-cloudformation) the repo as a ZIP archive.  The templates themselves are located in the **/cloudformation folder**
 
 ```
 git clone https://github.com/FortinetCloudCSE/fortigate-aws-vpc-routeserver-ha-dual-az-cloudformation.git

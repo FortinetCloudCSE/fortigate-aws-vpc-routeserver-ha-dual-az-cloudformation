@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v10.3) AWS CFT to deploy a dual AZ A-P solution integrated with VPC Route Server, repo: https://github.com/FortinetCloudCSE/fortigate-aws-vpc-routeserver-ha-dual-az-cloudformation",
+	"Description": "(v12.0) AWS CFT to deploy a dual AZ A-P solution integrated with VPC Route Server, repo: https://github.com/FortinetCloudCSE/fortigate-aws-vpc-routeserver-ha-dual-az-cloudformation",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
@@ -1958,7 +1958,10 @@
 		},
 		"Fgt1": {
 			"Type": "AWS::EC2::Instance",
-			"DependsOn": "RunInitFunction1",
+			"DependsOn": [
+				"RunInitFunction1",
+				"RunInitFunction2"
+			],
 			"Properties": {
 				"ImageId": {
 					"Fn::GetAtt": [
@@ -2131,7 +2134,10 @@
 		},
 		"Fgt2": {
 			"Type": "AWS::EC2::Instance",
-			"DependsOn": "RunInitFunction2",
+			"DependsOn": [
+				"RunInitFunction1",
+				"RunInitFunction2"
+			],
 			"Properties": {
 				"ImageId": {
 					"Fn::GetAtt": [

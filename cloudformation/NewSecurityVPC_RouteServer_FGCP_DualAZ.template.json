@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v12.1) AWS CFT to deploy a dual AZ A-P solution integrated with VPC Route Server, repo: https://github.com/FortinetCloudCSE/fortigate-aws-vpc-routeserver-ha-dual-az-cloudformation",
+	"Description": "(v26.3.1) AWS CFT to deploy a dual AZ A-P solution integrated with VPC Route Server, repo: https://github.com/FortinetCloudCSE/fortigate-aws-vpc-routeserver-ha-dual-az-cloudformation",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
@@ -2766,7 +2766,8 @@
 												"\n",
 												[
 													"set bfd enable",
-													"set bfd-desired-min-tx 300"
+													"set bfd-desired-min-tx 300",
+													"set bfd-required-min-rx 300"
 												]
 											]
 										},
